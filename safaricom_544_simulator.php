@@ -5,7 +5,7 @@
  * @author    James Ngugi <ngugi823@gmail.com>
  * @link 	  Strathmore University
  *
- * File contains HTML for simualtion in browsers.
+ * File contains HTML for simulation in browsers.
  */
 
 // Reads the variables sent via POST from our gateway
@@ -143,11 +143,11 @@ case '4': //buy for other number
 	if (!isset($parts[1])) {
 
 		$response = "END Enter phonenumber:<br/>";
-		$response .= "<a href='?text=4*{$parts[1]}'>0728270795</a><br/>";
+		$response .= "<a href='?text=4*0728270795'>0728270795</a><br/>";
 	} elseif (!isset($parts[2])) {
 		//has the amount been set? Again, its hardcoded.
 		$response = "END Enter amount between 5MB and 10MB:<br/>";
-		$response .= "<a href='?text=4*{$parts[1]}*{$parts[2]}'>6MB</a><br/>";
+		$response .= "<a href='?text=4*0728270795*6'>6MB</a><br/>";
 	} else {
 		$response = "END Sorry, you do not have enough bundles to complete this request.<br/>";
 	}
