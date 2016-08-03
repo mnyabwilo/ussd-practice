@@ -157,6 +157,4 @@ if (!empty($_POST)) {
 //Print the response onto the page so that the ussd API/gateway can read it
     header("Content-type: text/plain");
     echo $response;
-} else {
-    exit("Use POST!!");
 }
